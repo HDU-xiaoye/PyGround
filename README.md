@@ -1,10 +1,14 @@
 # PyGround
 
-Record a list of function to-be coding.
+Lists to-be-complete function below, and records progress.
 
 ## Requirement
 
 * ParseCfg()  
-      .cfg example: Method = 1
-*  
+    .cfg example: Method = 1
+
+* Xls2Dict()  
+
+
+* 
 
