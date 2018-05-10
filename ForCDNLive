@@ -17,12 +17,28 @@ syllabus
 
 
 
+我们的数模混合信号芯片中，有独立的纯数字逻辑块，模拟电路部分使用Verilog-AMS的real-wire（Wreal）进行建模，模拟部分也包含着一些数字逻辑模块。
+
+表2.1 RNM Coercing对编译效能的影响
+Coercing	Max PAK size	Peak Memory	IE Instances	Comp. Time
+Global		689GB	136884	5338Min
+Off-Digital		38GB	338	89Min
 
 
+Peak Memory	IE Instances	Comp. Time
+689GB	136884	5338Min
+38GB	338	89Min
 
 
+3.1	VDD、GND等信号多驱
+EDA在Wreal和Digital连接时，需要插入L2R、R2L或RL_Bidir等ConnectModule来转换信号类型。像电源这一类全局信号
 
+四、	总结
 
+对模拟模型设计提出了新的需求：从VAMS wreal到sv RNM，使用Systemverilog User Define Type（UDT），wreal只有单一数值
+利用UVM去解决模拟覆盖率的问题
+AMS-Supported MSIE很有必要
+依然存在持续的挑战。模拟模型功能一致性、仿真速度
 
 
 
